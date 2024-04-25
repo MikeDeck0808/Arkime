@@ -20,7 +20,7 @@ echo WIPE | sudo /opt/arkime/db/db.pl http://localhost:9200 wipe > /dev/null 2>&
 echo "----- Finished with starting all services -----"
 
 
-# Reading in the pcap file. This must be entered as a argument
+# Reading in the pcap file. This must be entered as an argument
 echo "----- Starting to read in pcap file -----"
 sudo /opt/arkime/bin/capture -r "$1" --copy
 
